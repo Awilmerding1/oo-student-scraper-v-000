@@ -97,6 +97,6 @@ class Scraper
   
     
 
-
+end
 end
 
