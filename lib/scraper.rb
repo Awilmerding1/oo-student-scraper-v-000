@@ -18,6 +18,7 @@ class Scraper
     end
 
   def self.scrape_profile_page(profile_url)
+<<<<<<< HEAD
     profile = open(profile_url)
     doc = Nokogiri::HTML(profile)
     social_icons = doc.css(".social-icon-container a img")
@@ -55,6 +56,15 @@ class Scraper
         blog_icon = each_icon
       else 
         blog_icon = nil
+=======
+     profile = open(profile_url)
+      doc = Nokogiri::HTML(profile)
+        social_icons = doc.css(".social_icon a")[0]["href"]
+        
+        binding.pry
+        doc.map do |profiles|
+        profile_hash = {linkedin: social, github: social, blog: social, profile_quote: profile.css(".profile-quote").text, bio: profile.css(".bio-content p").text}
+>>>>>>> 75da74aad8a7151c8eead9b23574e1753dcbe84e
       end
     end
 
