@@ -64,7 +64,6 @@ class Scraper
         binding.pry
         doc.map do |profiles|
         profile_hash = {linkedin: social, github: social, blog: social, profile_quote: profile.css(".profile-quote").text, bio: profile.css(".bio-content p").text}
->>>>>>> 75da74aad8a7151c8eead9b23574e1753dcbe84e
       end
     end
 
