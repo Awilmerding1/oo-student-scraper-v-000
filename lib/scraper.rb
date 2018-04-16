@@ -56,7 +56,7 @@ class Scraper
       else 
         blog_icon = nil
       end
-      
+    end
     # profile = open(profile_url)
     #   doc = Nokogiri::HTML(profile)
     #     social_icons = doc.css(".social_icon a")[0]["href"]
