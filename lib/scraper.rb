@@ -57,15 +57,15 @@ class Scraper
         blog_icon = nil
       end
       
-     profile = open(profile_url)
-      doc = Nokogiri::HTML(profile)
-        social_icons = doc.css(".social_icon a")[0]["href"]
+    # profile = open(profile_url)
+    #   doc = Nokogiri::HTML(profile)
+    #     social_icons = doc.css(".social_icon a")[0]["href"]
         
-        binding.pry
-        doc.map do |profiles|
-        profile_hash = {linkedin: social, github: social, blog: social, profile_quote: profile.css(".profile-quote").text, bio: profile.css(".bio-content p").text}
-      end
-    end
+    #     binding.pry
+    #     doc.map do |profiles|
+    #     profile_hash = {linkedin: social, github: social, blog: social, profile_quote: profile.css(".profile-quote").text, bio: profile.css(".bio-content p").text}
+    #   end
+    # end
 
   if twitter_icon != nil 
     twitter_link = link[icon_link.index(twitter_icon)]
