@@ -86,9 +86,8 @@ class Scraper
     new_hash = profile_hash.delete_if{|key, value| value == nil}
     
     new_hash
-  
-    
 
 end
+binding.pry
 end
 
