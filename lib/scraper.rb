@@ -89,7 +89,7 @@ class Scraper
   end
   
  
-  profile_hash = {twitter: twitter_link, linkedin: linkedin_link, github: github_link, blog: blog_link, profile_quote: doc.css(".profile-quote").text, bio: doc.css(".bio-content p").text}
+  profile_hash = {blog: blog_link, profile_quote: doc.css(".profile-quote").text, bio: doc.css(".bio-content p").text, twitter: twitter_link, linkedin: linkedin_link, github: github_link}
       
     new_hash = profile_hash.delete_if{|key, value| value == nil}
     
